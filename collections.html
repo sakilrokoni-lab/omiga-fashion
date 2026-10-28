@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collections — OMIGA Fashion</title>
+  <meta name="description" content="Woven, knit, and sweater collections from OMIGA Fashion, a garment buying house in Dhaka.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="OMIGA Fashion home"><img src="assets/logo.png" alt="OMIGA Fashion"></a>
+    <nav class="nav" id="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="collections.html" aria-current="page">Collections</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="header-cta" href="contact.html">Request prices</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+  </header>
+  <main id="main">
+    <header class="page-hero">
+      <p class="eyebrow">Product gallery</p>
+      <h1>Styles ready for a <em>buyer's</em> line.</h1>
+      <p>Woven, knit, and sweater references developed for men's, ladies', and kids' wear. Open a style, then ask the desk for fabric, price, and a sample plan.</p>
+    </header>
+    <div class="filters" role="tablist">
+      <button type="button" data-filter="all" class="is-active">All</button>
+      <button type="button" data-filter="woven">Woven</button>
+      <button type="button" data-filter="woven-tops">Woven tops</button>
+      <button type="button" data-filter="woven-bottoms">Woven bottoms</button>
+      <button type="button" data-filter="knit">Knit</button>
+      <button type="button" data-filter="knit-tops">Knit tops</button>
+      <button type="button" data-filter="knit-bottoms">Knit bottoms</button>
+      <button type="button" data-filter="sweater">Sweaters</button>
+    </div>
+    <p class="gallery-meta" data-gallery-meta>Loading styles…</p>
+    <div class="gallery" data-gallery></div>
+    <div class="load-wrap">
+      <button class="btn btn-line" type="button" data-more>Show more styles</button>
+    </div>
+  </main>
+  <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Style viewer">
+    <button class="lb-close" type="button" aria-label="Close">×</button>
+    <button class="lb-prev" type="button" aria-label="Previous">←</button>
+    <button class="lb-next" type="button" aria-label="Next">→</button>
+    <img alt="">
+    <p class="lb-caption"></p>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/logo-white.png" alt="OMIGA Fashion">
+        <p>Ask for a costing on any style in this gallery.</p>
+      </div>
+      <div>
+        <h3>House</h3>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Collections</h3>
+        <a href="#woven">Woven</a>
+        <a href="#knit">Knit</a>
+        <a href="#sweater">Sweater</a>
+      </div>
+      <div>
+        <h3>Desk</h3>
+        <a href="mailto:zaman@omigafashion.com">zaman@omigafashion.com</a>
+        <a href="https://wa.me/8801754568347">WhatsApp</a>
+      </div>
+    </div>
+    <div class="legal"><span>© <span data-year>2026</span> OMIGA Fashion</span><span>Buying house · Bangladesh</span></div>
+  </footer>
+  <script src="js/gallery-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
