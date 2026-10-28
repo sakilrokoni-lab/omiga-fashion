@@ -14,7 +14,7 @@
   --shadow: 0 24px 60px rgba(22, 20, 17, 0.12);
   --serif: "Cormorant Garamond", "Times New Roman", serif;
   --sans: "Manrope", "Segoe UI", sans-serif;
-  --header: 96px;
+  --header: 168px;
   --max: 1240px;
 }
 
@@ -61,8 +61,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
   transition: border-color 0.3s, background 0.3s;
 }
 .site-header.is-scrolled { border-bottom-color: var(--line); background: rgba(230, 222, 209, 0.97); }
-.brand { display: flex; align-items: center; gap: 10px; min-width: 160px; }
-.brand img { height: 84px; width: auto; object-fit: contain; }
+.brand { display: flex; align-items: center; min-width: 0; }
+.brand img {
+  width: 220px;
+  height: auto;
+  max-height: 148px;
+  object-fit: contain;
+  object-position: left center;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -599,12 +605,12 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--teal); bord
   max-width: 1480px;
 }
 .site-footer img {
-  height: 92px;
-  width: auto;
+  width: 210px;
+  height: auto;
   margin-bottom: 14px;
   background: var(--paper);
   border-radius: 14px;
-  padding: 4px 8px;
+  padding: 6px 8px;
 }
 .site-footer h3 {
   margin: 0 0 12px;
@@ -647,6 +653,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--teal); bord
   }
   .nav.is-open { display: flex; }
   .header-cta { display: none; }
+  .brand img { width: 168px; max-height: 120px; }
   .hero, .split, .collections, .service-grid, .process-grid, .why-grid, .clients, .cta, .contact-grid, .footer-grid, .shots, .story-list article, .form-row {
     grid-template-columns: 1fr;
   }
