@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Collections — OMIGA Fashion</title>
-  <meta name="description" content="Woven, knit, and sweater collections from OMIGA Fashion, a garment buying house in Dhaka.">
+  <meta name="description" content="Woven, knit, and sweater styles developed by OMIGA Fashion, a garment buying house in Dhaka, for men's, ladies', and kids' wear.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,73 +13,127 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span>Garment buying house · Uttara, Dhaka · Since 2016</span>
+      <div class="topbar-links">
+        <a href="tel:+8801754568347">+880 1754 568347</a>
+        <a class="topbar-hide" href="mailto:zaman@omigafashion.com">zaman@omigafashion.com</a>
+        <a class="topbar-hide" href="https://wa.me/8801754568347">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="OMIGA Fashion home"><img src="assets/logo.png" alt="OMIGA Fashion"></a>
-    <nav class="nav" id="site-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="collections.html" aria-current="page">Collections</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a class="header-cta" href="contact.html">Request prices</a>
-    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="OMIGA Fashion home"><img src="assets/logo.png" alt="OMIGA Fashion"></a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#factories">Factories</a>
+        <a href="index.html#clients">Clients</a>
+        <a href="collections.html" aria-current="page">Collections</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="btn btn-dark header-cta" href="index.html#contact">Request prices</a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    </div>
   </header>
+
   <main id="main">
     <header class="page-hero">
-      <p class="eyebrow">Product gallery</p>
-      <h1>Styles ready for a <em>buyer's</em> line.</h1>
-      <p>Woven, knit, and sweater references developed for men's, ladies', and kids' wear. Open a style, then ask the desk for fabric, price, and a sample plan.</p>
+      <img src="assets/photos/rack-sweaters.jpg" alt="">
+      <div class="wrap">
+        <p class="kicker" style="color:var(--gold-soft)">Product gallery</p>
+        <h1>Styles ready for your <em>line.</em></h1>
+        <p>Woven, knit, and sweater styles developed for men's, ladies', and kids' wear. Open a style, then ask us for fabric, price, and a sample plan.</p>
+      </div>
     </header>
-    <div class="filters" role="tablist">
-      <button type="button" data-filter="all" class="is-active">All</button>
-      <button type="button" data-filter="woven">Woven</button>
-      <button type="button" data-filter="woven-tops">Woven tops</button>
-      <button type="button" data-filter="woven-bottoms">Woven bottoms</button>
-      <button type="button" data-filter="knit">Knit</button>
-      <button type="button" data-filter="knit-tops">Knit tops</button>
-      <button type="button" data-filter="knit-bottoms">Knit bottoms</button>
-      <button type="button" data-filter="sweater">Sweaters</button>
-    </div>
-    <p class="gallery-meta" data-gallery-meta>Loading styles…</p>
-    <div class="gallery" data-gallery></div>
-    <div class="load-wrap">
-      <button class="btn btn-line" type="button" data-more>Show more styles</button>
-    </div>
+
+    <section class="section" style="padding-top:48px">
+      <div class="wrap">
+        <div class="filters" role="toolbar" aria-label="Filter styles">
+          <button type="button" data-filter="all" class="is-active">All</button>
+          <button type="button" data-filter="woven">Woven</button>
+          <button type="button" data-filter="woven-tops">Woven tops</button>
+          <button type="button" data-filter="woven-bottoms">Woven bottoms</button>
+          <button type="button" data-filter="knit">Knit</button>
+          <button type="button" data-filter="knit-tops">Knit tops</button>
+          <button type="button" data-filter="knit-bottoms">Knit bottoms</button>
+          <button type="button" data-filter="sweater">Sweaters</button>
+        </div>
+        <p class="gallery-meta" data-gallery-meta>Loading styles…</p>
+        <div class="gallery" data-gallery></div>
+        <div class="load-wrap">
+          <button class="btn btn-line" type="button" data-more>Show more styles</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <div class="cta-band">
+          <div>
+            <p class="kicker" style="color:var(--gold-soft)">Costing</p>
+            <h2>Seen a style you like?</h2>
+            <p>Send us the style, your quantity, and target price. We'll reply with a factory fit, a sample route, and a costing.</p>
+            <a class="btn btn-dark" href="index.html#contact">Ask for a price</a>
+          </div>
+          <img src="assets/photos/folded-sweaters.jpg" alt="Folded knitted sweaters in neutral colours" loading="lazy">
+        </div>
+      </div>
+    </section>
   </main>
+
   <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Style viewer">
     <button class="lb-close" type="button" aria-label="Close">×</button>
     <button class="lb-prev" type="button" aria-label="Previous">←</button>
     <button class="lb-next" type="button" aria-label="Next">→</button>
-    <img alt="">
-    <p class="lb-caption"></p>
+    <div><img alt=""><p class="lb-caption"></p></div>
   </div>
+
   <footer class="site-footer">
-    <div class="footer-grid">
-      <div>
-        <img src="assets/logo.png" alt="OMIGA Fashion">
-        <p>Ask for a costing on any style in this gallery.</p>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-logo" href="index.html"><img src="assets/logo.png" alt="OMIGA Fashion"></a>
+          <p>Ask for a costing on any style in this gallery.</p>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <a href="index.html#about">About us</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#process">Process</a>
+          <a href="index.html#clients">Clients</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+        <div>
+          <h3>Collections</h3>
+          <a href="#woven-tops" data-filter-link="woven-tops">Woven tops</a>
+          <a href="#woven-bottoms" data-filter-link="woven-bottoms">Woven bottoms</a>
+          <a href="#knit-tops" data-filter-link="knit-tops">Knit tops</a>
+          <a href="#knit-bottoms" data-filter-link="knit-bottoms">Knit bottoms</a>
+          <a href="#sweater" data-filter-link="sweater">Sweaters</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <a href="tel:+8801754568347">+880 1754 568347</a>
+          <a href="mailto:zaman@omigafashion.com">zaman@omigafashion.com</a>
+          <p>WeChat: omigafashion1216</p>
+          <p>House 24/26, Road 10, Priyanka Runway City, Uttara, Dhaka 1230</p>
+        </div>
       </div>
-      <div>
-        <h3>House</h3>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div>
-        <h3>Collections</h3>
-        <a href="#woven">Woven</a>
-        <a href="#knit">Knit</a>
-        <a href="#sweater">Sweater</a>
-      </div>
-      <div>
-        <h3>Desk</h3>
-        <a href="mailto:zaman@omigafashion.com">zaman@omigafashion.com</a>
-        <a href="https://wa.me/8801754568347">WhatsApp</a>
-      </div>
+      <div class="legal"><span>© <span data-year>2026</span> OMIGA Fashion. All rights reserved.</span><span>Garment buying house · Bangladesh</span></div>
     </div>
-    <div class="legal"><span>© <span data-year>2026</span> OMIGA Fashion</span><span>Buying house · Bangladesh</span></div>
   </footer>
+
+  <a class="wa-float" href="https://wa.me/8801754568347" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.4-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg>
+  </a>
+
   <script src="js/gallery-data.js"></script>
   <script src="js/main.js"></script>
 </body>
